@@ -1,0 +1,88 @@
+header{
+    height: 100vh ;
+    padding-top: 7rem;
+    overflow: hidden;
+
+}
+.header_container{
+   text-align: center;
+   height: 100%;
+   position: relative;
+}
+/* ====================cta============ */
+.cta{
+    margin-top: 2.5rem;
+    display: flex;
+    gap:1rem;
+    justify-content: center;
+    
+}
+/* =====================Socials========= */
+.header_socials{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    bottom: 3rem;
+}
+.header_socials::after{
+    content: "";
+    width: 1px;
+    height: 2rem;
+    background: var(--color-primary);
+}
+/* ==================Me================= */
+.header_container .me{
+    background: linear-gradient(var(--color-primary),transparent);
+    width: 20vw;
+    height: 46vh;
+    position: absolute;
+    left:calc(50% - 10vw);
+    margin-top: 4rem;
+
+    border-radius: 12rem 12rem 0 0;
+    -webkit-border-radius: 12rem 12rem 0 0;
+    -moz-border-radius: 12rem 12rem 0 0;
+    -ms-border-radius: 12rem 12rem 0 0;
+    -o-border-radius: 12rem 12rem 0 0;
+    padding: 2rem 1.5rem 1.5rem 1.5rem;
+}
+/* ==================scroll down============ */
+.scroll_down{
+   position: absolute;
+   right: -2.3rem;
+   bottom: 5rem;
+   transform: rotate(90deg);
+   -webkit-transform: rotate(90deg);
+   -moz-transform: rotate(90deg);
+   -ms-transform: rotate(90deg);
+   -o-transform: rotate(90deg);
+    font-weight: 200;
+    font-size: 0.9rem;
+}
+/* =====================Media Queries Tablet================= */
+@media screen and (max-width:1024px){
+   header{
+       height: 100vh;
+   }
+   .header_container .me{
+    width: 40vw;
+    height: 50vh;
+    left:calc(50% - 20vw)
+   }
+}
+/* =====================Media Queries Mobile================= */
+@media screen and (max-width:600px){
+    header{
+        height: 100vh;
+    } 
+    .header_socials,.scroll_down{
+      display: none;
+    }
+    .header_container .me{
+        width: 42vw;
+        height: 35vh;
+        left:calc(50% - 21vw)
+    }
+}
