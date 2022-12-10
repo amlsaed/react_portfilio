@@ -16,9 +16,9 @@ import 'swiper/css/scrollbar';
 
 
 
-import AVTR1 from '../../assets/1.webp'
-import AVTR2 from '../../assets/2.webp'
-import AVTR3 from '../../assets/3.webp'
+import AVTR1 from '../../assets/images.jpg'
+import AVTR2 from '../../assets/images.jpg'
+import AVTR3 from '../../assets/images.jpg'
 SwiperCore.use([Pagination]);
 const data = [
   {

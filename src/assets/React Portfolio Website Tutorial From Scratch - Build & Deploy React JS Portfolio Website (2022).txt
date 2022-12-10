@@ -1,0 +1,777 @@
+Hello guys and welcome back and if you are new here then welcome and congratulations on finding this video where we are going to build and deploy this beautiful react personal portfolio website now i've seen a couple of react portfolio websites and i'm going to tell you this is by far going to be the best in terms of design and features now before i even walk you through the 
+
+ Finished project let me quickly tell you some of the things that you are going to learn in this react tutorial now this tutorial is going to be very beginner friendly and that means we are going to create this react portfolio website totally from scratch okay so if you don't know anything about react or if you know very little about react then this is going to be the perfect video for you and now let me tell you what you will be 
+
+ Learning in this tutorial by the end of this video you will know how to build a react app from scratch okay so we are going to build everything from scratch you will know how to use react hooks especially the use state hook you're not going to go crazy on hooks so you're only going to use the use state hook you'll know how to use the react icons library okay 
+
+ So you're going to use some icons on our website so you know how to use react icons you'll know how to build a clean modern and responsive design with css3 you'll know how to implement multiple contact options on your website including whatsapp facebook messenger and email okay so people can actually message you directly on your website and i'm going to show you how to do that with 
+
+ Email.js and some other options that we are going to explore as i walk you through the finished project you will know how to use swipe.js in react apps you are also going to learn how to deploy your website okay so we are going to build this website and then after that we are going to upload it on the internet make it available for everyone around the world okay so this and many more things that you're 
+
+ Going to learn in this video now let me walk you through the finished project now this is exactly what we are going to build in this project okay so here on the header section we have our name and some call to action buttons okay so we can actually click or people can actually click to download your cv as you can see here they can download your cv and they can scroll down to contact you okay so here they have 
+
+ Several options which i'm going to walk you through once we get to the contact section so back here on the header section you can see they have an option to your social media let me go back all right we have our image here and we have this cooldown thing here okay so we can click to actually 
+
+ And it is going to take us to the bottom of the page right and notice we don't have the regular or the usual nav bar okay instead we have this floating nub let me actually refresh so that you see it well okay so our page loads and then our number comes in okay our floating now comes in all right so we have home about and all that okay so we can we can actually click 
+
+ And it is going to take us to the different sections of the page right and we are going to explore all that all right so here let's go to the about section we have our image here we have some cards and we have this button okay which is going to take us to the contact section let's go back up we have the experience section as well with this cool card hover effect 
+
+ And notice the background texture as well okay i'm going to show you how to do that and if you don't want that that is cool this portfolio website looks crazy cool already right here on the services section we have this cars as well we have our portfolio section with the different portfolio projects that we've worked on 
+
+ So here people have the option to go to your github and see the projects or they can see a live demo of the projects right and that is cool as well now let's scroll down and we have this testimonials section okay so we are going to create everything from scratch and then use swipe.js 
+
+ For the slice now let's scroll down and we have this section that is the contact section so this is going to be the fun part okay so here people have the option to click this and your email is going to be populated as you see here so they can just go ahead and type in their message they also have an option to message you on 
+
+ Facebook messenger so let's click and right here people can directly message you on facebook okay so people can directly message you on facebook and they also have an option to message you on whatsapp okay so here when i click this it is going to open my whatsapp i have whatsapp installed on this laptop so it's going to open what's up people visiting your website can directly send you a message on whatsapp 
+
+ Right great now they can also submit a direct message from this form okay and you're going to receive that in your email so right here i'm going to enter my name and email and then a message right and i'm going to send this message and this submitted okay so let me check my 
+
+ Email real quick i'm going to check my email right here okay so we have the message so this is the name the email and then the message are entered right so you can allow people to send you direct message from the form on your website and down here we have our footer with some social handles now let's see how this website is going 
+
+ To look on different devices okay so let's see how it's going to look on tablets and mobile phones all right so this our website is going to look on tablets let's download our cv as you can see everything is looking great we have a testimonial section right here we have a contact section too okay and we can still use the floating navigation for the different sections of the page 
+
+ Now let's see how it's going to look on forms so this is exactly how the website is going to look on mobile phones okay you can see it is very responsive so have a hover effect there's some portfolios that's our portfolio section we have the testimonials section here and our contact section okay so everything 
+
+ Is looking great and here on mobile people can also message you with the various contact options options that we have all right so this is what we are going to build in this tutorial and we have a lot to do so let's get started now as i said earlier we will be deploying our website okay and that means after building the website you will be uploading the website files to a 
+
+ Server okay and make it available for everyone around the world so for that we are going to use hosting guide the whole singer is by far the best hosting provider right now and that is because they are very reliable and affordable as you can see here for three dollars and 50 cents per month you're going to have your website hosted so here they have different options they have different plans that you can select i prefer this plan okay i prefer this package 
+
+ As i'm going to be able to host 100 websites they give me 100 gigabytes of ssd storage they give me a free email okay so you can get maybe hello at yourwebsite.com and they're going to give you a free ssl as well okay and ssl is the lock that you usually have on your website okay making your websites secure they give you a free domain name as well which usually costs with other hosting providers so hosting actually 
+
+ Gives you a lot of free stuff so that is what i am going to use and i have my affiliate link in the description so if you appreciate this tutorial and you want to um help me out you can use that and i may get a commission when you make a purchase okay and you're also going to get a discount all right so here i'm going to select the package that i want 
+
+ And hosting is very affordable so i'm going to go with this that is the 48 months i'm going to enter my email and i'm going to use paypal okay so let me go straight ahead and submit i'll make my payment let's proceed and claim our domain okay so they are giving us a free domain let's proceed to claim it so your domain name is going to be your 
+
+ Website's name all right so the domain name for this i'm going to say okay so this is going to be my domain name let me check to see if it is available and it is available okay so i'm going to claim it and we are going to create our website ourselves so we are going to escape this step all right so now that we are done purchasing our hosting and claiming our 
+
+ Domain name let's proceed to building the website to start off we are going to use npm to create a react application and npn comes with node so you should come to this website um that is node.js.org and then install any of these okay any of these versions should do it so just download it and walk through the installation process which is very very simple also i'm going to use vs code for this 
+
+ Project okay so that's the text editor i'm going to use so you come here to this website and you can download vs code all right so those are the two things you should have before we proceed with this tutorial i have my assets folder here with all the assets um all the images that we are going to use throughout this project and the pdf as well okay so we have the 
+
+ Pdf for our cv i'm going to leave a link to this um assets the source code and then a live demo of the website okay and that is going to be for my patreons so if you want these extras consider becoming a patreon but of course i'm going to walk you through step by step how to create this so you can do everything by yourself all right now i have a messy 
+
+ Desktop okay and i don't want to show you that so i'm going to use my terminal okay so i'm going to use git bash let's make this bigger okay and i'm going to cd to my desktop and here i'm going to create a react project okay so i'm going to do npx create react app and i'm going to call this react 
+
+ Portfolio website one okay so that is the name i'm going to call the folder and i'm going to hit enter okay and this may take a while all right so everything is done okay and um let's see as you can see i named my projects or 
+
+ The folder real portfolio website one so let me see the into that okay so i'm going to go into actually let me just open that with vs code okay so code and then the name of the project or the folder okay so react portfolio website one so i'm going to open that with vs code and our project is here great now i'm going to delete 
+
+ All the files inside our source folder okay we are going to start from we are going to do everything from scratch as i said earlier so i'm going to delete everything in the source folder okay and here in the public folder as well i'm going to delete everything so you can see we don't have anything in the source and in the 
+
+ Public folder right so in the public folder we should have an html and that is where our app is going to be rendered so i'm going to create an html file and with emits i'm going to do exclamation tab okay so the extensions i'm using is uh let me let me show you the extensions that i'm going to use i'm using ms actually comes with vs code so if you're using vs go you don't have 
+
+ To install that but we are going to use another extension um called es7 react readers um react native snippets okay so this extension we're going to use as well for the gsx okay so you should install that as well all right so let me go back to my index and i'm going to title this the ultimate 
+
+ React personal portfolio website i don't have to do anything here but to have a div okay and this way our app is going to be rendered okay so everything is going to be rendered here you can name this anything you want but it's usually called root now in the source folder i'm going to create another folder i'm going to call this assets 
+
+ And it's going to be the images that we are going to use okay so in this assets um i'm going to bring in all the images okay all the assets that we're going to use so i'm going to drag and drop them in okay so we have that and in the source folder i'm going to have the index js so it is the only file with a 
+
+ Dot js extension the rest is going to be dot jsx um that is because i'm going to be using image for shortcuts and you're going to understand that once we start coding um i'm going to have index dot css as well and this is going to have our variables uh browser prefix and all that so that is going to be my uh let's see what is it 
+
+ This should come in here this should be in the source okay should be a sublime of this okay so um let's see here in the index.js file i'm going to import react dom from react dom at first you have to import react as well okay so we would import react from react but these days you don't have to do that 
+
+ Okay in new a newer versions of react you don't have to import react okay so here we have to render something okay we have to render something in our index okay in this roots div so right here i'm going to render my app component which i've not created yet inside 
+
+ Let's get that so document or query selector and we are going to get our root okay that is this day i'm going to get this and then render this component so now let's create our app component let's create our app component so um i'm going to create a new file called app.jsx and i'm naming it jsx because i'm going to use emit um for shortcuts okay if it 
+
+ Is a js extension using image is going to be difficult let's create a functional component with raf let's go back to the index.js and import the components we just created okay so we're going to import up from the app component now we are going to start our server so i'm going to do npm start 
+
+ And we should have our app running in our defaults browser index.css okay so to make sure everything is linked let me get the body and i'm going to give that a background of black and text color come on let me give that a color of white okay i don't have the variables here so all right so we still have our up as you can see here to keep everything simple i'm going to 
+
+ Make each section of the page a component okay so we are going to have the header component here we are going to have this floating now but component as well we're going to have the about components we are going to have the experience components and on and on and on okay so um we are going to create a folder here in the source folder i'm going to call this component 
+
+ And that's going to hold the different components that we have okay so each component is also going to be a folder so the first one um let me call this about okay so we are going to have the about components and inside the about component folder we are going to have the jsx file about the jsx and for each component we are going to have a separate os um a css file for it okay 
+
+ So we are not going to write everything in one css file each component is going to have its own css file okay so for the about components we are going to have about the css so that is for the about now i'm going to create another one and this is going to be contact i'm just doing this alpha basically okay um so we are going to have the contact 
+
+ Component so contact dot jsx you know what let me go to the about let me go into the about and do raf ce let's make sure we import the css file as well about those css here in the contacts i'm here i'm going to do rafca again and import the css file for that so 
+
+ Contact.css which we haven't created so i'm going to create that contact.css the next component is going to be the experience component okay so the experience section experience.jsx it should have its own css as well okay so experience.css let's do our afce in the experience components 
+
+ And import our css file and the last components we are going to create is the um testimonials okay so testimonials let's create the jsx let's create its css okay so testimonials those css now i'm going to do r a f c here as well 
+
+ And import the testimonials dot css all right so we have that now i'm going to close all this okay all the components and all the files that we just created using control w i'm going to close them all and inside my app components i'm going to import them actually i'm going to 
+
+ Wrap this inside a react react fragment okay so here in the app components in the root app component i'm going to import the different components that we just created okay so yeah all the components that we've created i'm going to import them all and that's going to be in the order we want our application okay so we're going to have the header components we're going to have the now um the floating nav okay so the nav 
+
+ Components we are going to have the about the experience and all that okay so it's going to be in that order so first we are going to have the header and we should make sure that is imported header from components header and then the header.jsx okay 
+
+ And there's a problem here okay so um es lens is actually having a problem with the path okay um there's a conflict here okay so what i'm going to do is close this whole project and rename the projects again okay so i'm going to close that rename it and then reload it with vs code all right so i just reopened the project so here i'm going to run npm start again 
+
+ All right so everything is working as expected now let's see let me save again and you can see now we have no problem okay now let's proceed to import the other components so from the header section we are going to have the nav component as well okay so okay so that is going to come from let me go into the 
+
+ Components folder now import the nav component so we should have our now let's get the about from the about we are going to have let's see so we have the header the nav we have the about we are going to have the experience 
+
+ The services the portfolio testimonial so in that order okay so we are going to have the experience services portfolio we are going to have the tasty money house the contacts and now i'm going to import them all okay so from the about we are going to have the experience and that is going to be 
+
+ Components experience setting let's get the component itself let me duplicate this so from the components we are going to have the services all right okay so we should have all the components here okay so everything is working perfectly now we are going to get to the fun stuff shortly okay 
+
+ So we are going to soon get to work on the various sections or the various components that we just created but before that let's go into our index css okay and i'm going to delete the styles we have here so we are going to have um our css variables our uh we are going to change our phones as well okay so as you can see here this font doesn't look really good so we are going to change that we are going to use 
+
+ Google fonts and all that okay we are going to have some general css classes here so before we get to work on the various sections all the various components that we just created okay so right here first i'm going to zero out the margin and patterns that we have okay so we have some margins here as you can see each browser has some default styles okay for the different elements that we are going to have okay so here 
+
+ I'm going to set everything that is the margin to zero every element is going to have a pattern of zero so this here means every element on the web page okay should have these styles that we are given we are going to give them a border of zero as well and an outline of zero now i'm going to set the box size and to 
+
+ Border box a list out of none so that every li every list item is going to um the bullets for every list item is going to be removed and i'm going to set the text decoration for every anchor tag okay every link is going to have a text declaration of none that is removing the underlines for every link now as i said here we are going to have some css variables okay we are going to 
+
+ Use css variables throughout the project and that is going to help us prevent um repeating ourselves okay so we are going to have some variables here and it is even good to have some variables so that we can easily customize our page okay our our website okay so these are going to be the css variables that we are going to use these are going to be root variables and that means we can use them anywhere in this 
+
+ Project so to declare a css variable you're going to do two hyphens the name of the variable i'm going to call this color bg okay so it is going to be the background color for our body right and the value for this is going to be 1 f one f three eight okay so that is the value for this variable so i'm just going to copy this okay so these are the colors that we are 
+
+ Going to use these are basically the colors that we are going to use throughout this project so we have color bg variant okay so it is going to be um let me show you real quick okay so in this um finished project this background is going to um without the texture is going to be the color bg that is going to be the color bg variant and we are going to have primary which is going to be this uh 
+
+ Light blue and more colors okay so we're going to use css variables and as i said the good thing about css variables is we can easily customize our website okay so it helps us with easy customization so if maybe i don't want this primary color i can just come into the project change that variable or the value for that variable and the whole color is going to change okay the whole color for or any elements using that variable is 
+
+ Going to be changed okay and we are going to understand that once we get to um creating the elements in the components okay so these are the variables that we are going to use these are the colors that we are going to use all right now i'm going to have a couple of or three more variables here i'm going to call this container with lg okay 
+
+ And there's going to be 75 and this is going to be the width of a container class okay that we are going to create or that we are going to wrap around the different elements okay so this container class is going to be a general class and it is going to be in almost all the sections or almost all the components that we are going to create and we are going to understand this once 
+
+ We start creating elements in the different components i'm going to have another variable called container width this is going to be 86 percent and i'm going to have another one container width and that's going to be the small okay so sm and that is going to be 90 percent okay so the width of the container is going to change depending on the screen size okay so we 
+
+ Are going to use media queries obviously now let's move on and then i'm going to give that as crawl behavior of smooth okay so that we can smoothly scroll to the various sections of the page we are not going to need a scroll bar okay for this website so i'm going to display that now i'm going to remove the scroll bar and now let's move on to the body so i'm 
+
+ Going to target the body and here i'm going to change the font that we have okay so for that we are going to go to google phones to get some phones there and the font that i'm going to use is poppings okay so let me actually remove this so that i show you from scratch so let's search poppings and there's the font we are going to use so let's click that 
+
+ And right here we are going to select um the light okay so that is the 300 font weight the regular which is 400 the medium 500 and then the semi board okay so that is it now we are going to use the css so let's copy this and import it in our css okay i'm going 
+
+ To have this at the top save come back copy this as the phone's family okay so what is going to be the font problem now notice we have we see how the font now if i change that to the puppies you can see the fonts are now different okay so that is the poppings fonts we 
+
+ Are going to use throughout the project now i'm going to close this all right so from there i'm going to give the background the variable bg okay so the color bg and that is how you use css variables on the different properties of your elements and the color okay so the text color for every text is going to be color white and that is also here as you can see 
+
+ That is fff and then the variable is color white okay on the line height is going to be 1.7 so let's check that out and we have this okay now i'm going to add the background texture okay so i'm going to give a background image let's go into our source folder into our assets and i'm going to get an 
+
+ Image called bg texture and it is a png file okay so let me show you where is it bg texture okay it is a very tiny image okay that i have i have in here all right so that is going to give us 
+
+ The background texture and we have that all right so now let's proceed from the body we are going to have some general styles as i said earlier okay so let me leave a comment here now we are going to have the general container class okay so that is going to have a width of the variable we set up top that is container with lg on different devices they are going to 
+
+ The width is going to change okay so we are going to write media query for that but for now the width is going to be the lg okay and we are going to give that a margin of zero auto okay to position it in the middle horizontally all right so that is for the general class container the general container class now all h1 h2s h3s h47h5s are going to have a font weight of 500. 
+
+ Okay they are all going to have that style now let me get the h ones and the h ones are going to have a font size of 2.5 ram now i'm going to target this section okay so almost all the components are going to be they are going to be wrapped in a section okay in a section tag okay so every section tag is going to have a 
+
+ Margin top of atrium okay so that we have some white space around the different sections all the different components now section every section also is going to have an h2 okay here is going to be a direct child of the section tag okay so we are going to have an h2 and an age five okay so let me show you in the finished project real quick so as you can see in this about section 
+
+ You can see we have an h1 so we have an h2 and an h5 okay same here in the experience section all right so that is what we are doing here and they are going to have or they are going to be text aligned to the center and they are going to have a color of color lights okay and we have that color light here okay which is an rgba 
+
+ White with some transparency now i'm going to get the h2 and then change that color to the color primary so that is going to have the color primary and also let me give you the imagine bottom of 3ram all right so we have that now i'm going to have a general class of text light okay so for some elements i'm just going to add 
+
+ This class and it's going to change the color to color light now every anchor tag is going to have a color color primary and they're going to have a transition of all 400 milliseconds is all right you know what i'm actually 
+
+ Going to use this same transition a lot so let me come up here and make that a variable okay so i'm going to call this transition that is going to be this okay all 400 milliseconds is so here i'm going to use that transition variable i just created all right so let's move on from that and every anchor tag is going to have a hover effect as well okay so on hover the color is going to change to 
+
+ Color white now i'm going to have a btn class and this is boring this um looks boring but we need to have these classes okay these general classes so that we can have an easy time working with or working in the various components okay so every bcn tag and that is going to be for the different buttons that we are going to have every btn class is going to have a width of maximum content so it's going to fit 
+
+ Exactly its contents right i'm going to display inline block and give it a color of color primary now i'm going to give it them a pattern of 0.75 frame for the top and bottom and then 1.2 realm for the left and right let me give them a border border radius of 0.4 ram and the cursor 
+
+ Okay the cursor should be pointer now i'm going to give them a border of one pixel solid color primary and they are going to have a hover effect as well so let me give them a transition okay so that it smoothens the over or the change okay so right here as i said i'm going to give it a hover effect so on hover they are going to have a background of 
+
+ Color white and a color of color bg that is um let's see this should be var now border color is going to change here to transparent okay so it's going to change from color primary to transparent all right now we always have another class for the buttons okay some buttons are 
+
+ Going to have another btn primary class and for those they are going to have a background of color primary and a text color of color bg okay give them a dark text color and every image is going to be displayed block every image on this website is going to be displayed block with a width 
+
+ Of 100 percent and object fit is going to be covered okay and that is all for our general classes this is all for our general classes okay now we are going to have some media queries so that we make this responsive so we're actually going to have two media queries okay the first one is going to be for tablets 
+
+ So let me leave a comment here and it's going to be for medium devices that's tablets so as media screen and maximum width here i'm going to do 1204 why i'm sorry 1024 pixels so here what i want to do is to get the container class that is the general container class 
+
+ And change the width as i said i'm going to change the width here to the container with md for medium and that is i think 80 86 percent okay so on tablets the container class is going to be it is going to have a width of 86 percent okay i'm going to get this section tag as well and give it a margin top of sex right all right so that is all 
+
+ I'm going to just duplicate this for the small devices that is for mobile phones and here is going to be 600 pixels okay and we are going to change this to sm for small and i'm going to get the h2 okay and they are going to have the margin bottom of two ram 
+
+ Okay so it is going to be a margin bottle all right so that is all for the smaller devices media queries okay and that is all for this index css file and i'm actually going to leave this file that is the index css i'm actually going to leave it so that we can make reference to some of the classes and the styles that we have 
+
+ Here but this app jsx is going to be closed okay and now let's proceed to work on the component okay let's proceed to work on the different sections that we're going to have starting with the header section okay so let's go into our header jsx all right so here i'm actually going to remove this and i'm going to use the header tag here 
+
+ Okay so it is an html5 semantic tag all right and i'm going to wrap everything inside a dave with a class of container that is the general container class that i was talking about this class right here okay that we styled so that is the general container class we are going to use here and we are going to have another class of header and as one has container okay and that's going to be specific to 
+
+ This header component okay or this header section and this conversion or this style of naming classes is called bim okay and we're going to use that a lot in this tutorial all right so let me hit enter and um let's see we're going to have an h5 and that is going to say hello i am and below that we are going to have an 
+
+ H1 and that is going to have our name that is high here bin two below that as well we are going to have an age five with a class of text lights and remember we had that class here as well let me quickly show you um text light or is it okay so that is going to make 
+
+ It great okay using this variable right here all right so we have that um that is going to say full stack developer okay so below that we are going to have some quote washing buttons okay the two call to action buttons let me show you we're going to have this download cv button and then 
+
+ This legs um let's talk about an as well so to simplify things i'm actually going to create um i'm going to have that in a separate component okay so i'm going to create a component for that and i'm going to call that city.jsx okay so call to action.jss and i'm going to do ra fce here all right so in here 
+
+ Give this a class of cta and we are going to have our two buttons these are actually going to be links and the first one is going to say download what can i type today download cv that is the first one and the second one is going to say contact okay or let's talk and that is going to take us to the contact section okay or the contact 
+
+ Component and with this we are going to give the contact section an id of contact okay so that we can just click on this and it will take us to that section okay so to download the cv we should import the pdf okay that is a resume the pdf that we have here we should import that here so i'm going to call that let me import the cv 
+
+ From let's go back into our let's go back one more time into our assets and get the cv okay so it is called save it.pdf and we are going to have that here okay so then for it to be downloadable we are going to add download attributes okay and that is all for 
+
+ This section let's see what we have and it is not here and that is because we've not imported it in the header jsx okay so here we are going to import cta from cta okay let's make sure we are using it here so we are going to do cta and click this should be a self-closing tag let's see and we have the two buttons okay so we can actually 
+
+ Click this to download the cv all right now remember we had or we styled some we had some tool um some btn classes okay so btn and then btn primary we are going to add those classes here okay so the first one is going to have a class so a class name of btn okay so that is going to be the download cv and the second one 
+
+ Is going to have a class name of btn and then the btn primary class okay so we should have the two buttons now let's go back and go into a header so we can now close the cta component now looking at the finished project we need our image this social setting this scroll down link okay so those are the three things that we are 
+
+ Going to have let's first have the image okay so um let's see that's going to be let me give that that a class of me and we are going to have our image okay so up here i'm going to import that image um let me go back into our assets and then get the main dots 
+
+ I think png okay so i'm going to use that image here all right let's see whether we have it and we have the image okay so we have our image now we are going to have the scroll down link as well down here so i'm going to have a link and that is going to take us to the contact section 
+
+ Let me actually give this a class name of scroll and ask one that's called down okay and it is going to say scroll down and the last thing we are going to have here is the socials okay so i'm actually going to put that in a new component or i'm going to create a new component for that so let's call this header socials 
+
+ Dot jsx and i'm going to do raf c e for a react functional um a react function let me give this a class of header and that's going as called socials okay and inside of it we are going to have our links the first one is going to go to linkedin dot com and 
+
+ Let's give it a target blank okay so that it opens in a new tab okay so target and that's called blank let me duplicate this twice the second one is going to go to github and the third one is going to go to um dribble okay drawbar.com now we are going to use icons for the socials as you can see in the finished project these are icons so for that we are going to use react 
+
+ Icons okay so let's let's go to this url let's open our terminal actually let me open a new terminal here paste what i just copied and then hit enter okay and it is going to install react icons right here now let's search the first icon that we are going to use that is linked in and i'm going to use this okay 
+
+ So i'm just going to click on it and it is going to copy the name to my clipboard and here i'm going to import that okay from the react icons library react icons slash the initials okay so this is bs okay and that is going to be imported and i'm going to use that here so i'm going to paste that is going to be a self-closing tag 
+
+ Now let's see and nothing is showing because we are not importing this component okay the components here we're exporting it we should import it in the header okay so here i'm going to import the component we just created that is header socials from header socials okay and i'm going to use that here 
+
+ There's going to be a self-closing tag as well come on save and we should have our icon okay so that is the linkedin icon the next icon is going to be i think github so which one should we use i'm going to use this so let's go back to our header socials duplicate this change this 
+
+ And make this um f a i'm going to paste this here as a closing a self-closing tag the next one let's see whether we have that and we have it okay the next one is going to be dribble so let's search the dribble icon and i'm going to use this one okay let me duplicate this paste what i just copied 
+
+ And this is going to be fi okay as you can see here all right let me use this in here as a as a self closing tag and that is all for the header socials component so i'm going to close that and save this file okay so we have all three icons now let's go ahead into our header css and style this whole header component 
+
+ Now our whole header section is inside a head attack right and let's give that a height of 100 viewport height the pattern top of 7 ram and an overflow of hidden okay now let's get the header container class and let's text align that to the center give that a height of 100 percent and position this relative all right now let's see that's what we 
+
+ Have now we are going to install the ct that is the call to action buttons okay let's go ahead and start the call to action buttons and remember we gave that a class of cta so let's give that a margin top of 2.5 frame to push it down a little bit okay so that's pushed down now i'm going to display them flex okay so that i can have some space between them so i'm going to display flex and then give 
+
+ Them come on display them flex and then give them a gap okay to have the space between them a gap of one ram should be good or late let's do 1.2 ram or even one ram is okay all right now it is here to the left so i'm going to justify content to the center okay so we have that now let's get the socials okay 
+
+ Oh you know what let's see yeah let's get the social set and put that here okay so let me copy those comments paste it here change this to header socials let me actually make it socials or header socials okay so we give that a class of header and a square underscore so shells 
+
+ I'm going to display that flex okay and then the flex direction is going to be column now i'm going to align items to the center and give a space between them a gap of 1 or 0.8 ram i'm going to position that absolute and it's going to be 0 from the left and three ram from the bottom now let's see what we have there we have it okay 
+
+ Now the reason this is styled already with the primary color and then on hover we are getting this white is because we have some styles for the links okay and on hover we change them to white okay that is why it's already stopped now let me minimize this terminal and let's proceed okay so i want to have that line 
+
+ This line that we have here in the finished project and i'm going to use the after pseudo element of the header socials okay so i'm going to get the header socials and use the after pseudo element here okay so the content is going to be nothing the width is going to be one pixel the height is going to be two ram come on 
+
+ And the background is going to be color primary color primary okay now let me get let's see and we have that now let me get the let's move on to the image okay now we are done with the socials let's move on to the image it is looking horrible and cut off so let's move on to 
+
+ That we gave that a class of me actually let me just remove this and make targeted me and we are going to give that a background color primary that is the dave holding or containing the image okay we're going to give that a background of children close this up so that we see a retentive site 
+
+ All right so the background of color primary let's give it a width of 22 ram a height of 30 ram a position of up absolute and it's going to be 50 from the left okay so here i'm going to calculate 50 and subtract half the width okay and it's going to 
+
+ Put it right in the middle or if you want you can just do 50 and then transform and then translate it you can do transform and translate on the x-axis okay negative 50 is going to do the same thing but you know it's cool to make things short okay let's push it down from the buttons okay 
+
+ So i'm going to give it a margin top of 4m and a border radius of 12 ram for the top left 12 round for the top right 0 for the bottom right and a zero for the bottom left okay so we have that now you know what the background i'm going to make that a linear gradient okay so linear gradient 
+
+ Come on they near gradient and it's going to be the primary color to a transparent okay so we have that overflow to hidden and padding i'm going to give it a pattern of fire frame for the top to push it to push the image down 1.5 frame all around 
+
+ Okay save and this is what we have all right now the next thing is to position this scroll down link that we have okay so let's position that wall let me copy this so we give that a class of scroll and that's gonna scroll down i'm going to position this absolute it's going to be negative 2.3 
+
+ Ram 2.3 ram from the right from the bottom is going to be five frame okay so we have that now i'm going to rotate it okay so i'm going to transform and rotate 90 degrees great i'm going to change the font weight to 200 
+
+ To make it lighter and change the font size to 0.9 ram okay now there's actually not a 200 phone to it because we imported i think from 300 okay so let me just remove that 200 let's make that 300 see there is no difference right so that's all for this header component okay or the header section 
+
+ Now before we even move on to the next section let's make this responsive on smaller devices okay so we are going to write the media queries for this now let me go back to this index css and copy why is it copying this okay i don't want to waste time typing that out so it is going to be for tablet 
+
+ Copy paste and we are going to have another for small devices okay and that is going to be for from 600 pixels and below all right so let's start with tablets all right so this is going to be very simple but before that let's make this smaller okay so that we see the change so here i could just say uh the 
+
+ Container should have a background of red just so we can see um the breakpoints okay so right here is the breakpoint so anything below this is going to have that style okay the starter we are going to give all right so here on tablets we want to get this the header tag and then change the height to 68 viewport height okay 
+
+ And that's what we are going to do here and this is looking weird but let's forget that for now and here in the or here on mobile phones i'm going to get the header and change the height back to 100 viewport height this should be height okay i'm going to get the header socials and they scroll down and display them 
+
+ Now so they are not going to be available on mobile phones all right to really see what is happening i'm going to show you the render on mobile phones okay so what is our website is going to look on mobile phones that's how it is going to look on mobile phones now let's see on tablets and that's exactly how it's going to 
+
+ Look okay right now let me close this so now the next component that we are going to handle or tackle is the nav component okay our floating nav that we have here that is the next component that we are going to work on so let's move on to that i'm going to close the header okay the header component 
+
+ And we are going to get on to the now okay so let me open that and i'm actually going to put this in the nav tag okay that is also an html5 semantic tag and we are going to have some links okay so the first one is going to take us to the top of the page and we are going to have an icon inside of this that is going to be a home icon 
+
+ So we already have react icons installed in our project so let's go back to this website and search home and you can use any of these icons but i'm going to use this one okay so i'm just going to click on that and i'm going to import that in this component okay so i'm going to import from react icons and then 
+
+ Ai okay as you see here now i'm going to use that here as a self closing tag save and we should have that okay so we have that icon and we are going to have the about so let me duplicate this five times we are going to have the about the experience the project and then 
+
+ The contact okay so this is going to go to the about experience the services or you can make this go to the portfolio section if you want and it's going to go to the services so then this will go to the contact section of the page okay so you should have five icons right here are you going to change them 
+
+ The second one is going to be about so let's say about or user okay so about me let's see what we used here in the project um let's see okay so i'm going to use this one let me duplicate this replace that there's going to be a i okay and i'm going to paste this in okay so this user 
+
+ Now let's check that and we have that okay so the next one is going to be experience so for experience let me just search book just trying to find the same exact icon okay i'm going to use this one okay so i'm going to copy and then paste that here let me duplicate this replace that and it's going to be bi 
+
+ Save and we should have our book okay so we have that and the next one is going to be let's see this uh services so let me search service and right here okay so this is the icon i'm going to use let me click on that come back here duplicate this replace this it's going to be ri and i'm going to paste this here okay 
+
+ Save and we should have uh yeah so we should have it okay so the last one is going to be contact and we really you can use any icon that you want okay you can use any icons that you want let me actually search message let's see what you reused here and i'm going to use this icon place this replace this as well 
+
+ It's going to be bi oh no let's duplicate this all right save so right here we have all the icons okay and we can click them to get them to the different sections actually that's not happening because we have to give them an id okay so the sections that we've assigned to the links okay the sections that we want these links to go should have 
+
+ The id that corresponds to the href okay so let's go into the about let's start with the about and i'm actually going to change this to a section tab okay and this section tag should have an id of about and on click of this icon it should bring us down to the about section okay actually let me go into my index.css and then give every section a height of 100 
+
+ Viewport height okay now about should have a hundred viewport height which is good so now we can visualize what we are doing here so i'm going to go into all the components and make the changes real quick so it is going to have an id an id of contact 
+
+ The next is going to be let me actually just close this up and they are bowels as well the next is going to be the experience that is going to be a section and it is going to have an id of experience we are going to have the footer but that is not going to be that's not going to have the styles that we are giving right now 
+
+ This is going to have a section tag as well and an id of portfolio actually that is not needed but you know let's just keep everything real here the services is going to have an idea as well of services and the testimonials we don't need to add that here but 
+
+ Let's just do it so an idea of tasty morning house we may remove it when we actually get to the testimonials okay but for now let's just keep that okay so now i can click and it is going to take me to the video sections okay and lastly the contacts great all right so now let's tile this okay so let's go into 
+
+ Our css that is our now css and give our floating navigation some styling now i want to see everything as i could okay so i'm going to put this side by side so that we can see what's happening here okay so we have that inside a nav tag we are going to give that a background actually let me do an rgba of zero zero zero and then zero point three okay 
+
+ So black with some transparent let's give that a rate of maximum content so it's going to fit exactly the width of its content we are going to display block which it is already and give it a pattern of 0.7 ram for the top and bottom and 1.7 for the left and right let's change the z index to 2. i'm going 
+
+ To position this fixed so it's going to be fixed on the page no matter how far we scroll it is going to be 50 percent from the left let's transform then translate on the x as negative 50 percent and from the bottom it is going to be two rep 
+
+ Now i'm going to display this flex and give it a gap okay so we are going to have some gap between the icons or the ace or the anchor tags give it a border radius of three ram and i'm going to have a backdrop filter okay and there's going to be a blur of 15 pixels now i'm going to target the links okay the links inside of it i'm going to target that so now that then 
+
+ The links inside of that is going to have a background of transparent padding one ram okay i think one ram is too much let's do zero points of 0.9 ram border radius of 50 display flex 
+
+ Give it a color of color light and a font size of 1.1 ram all right so we have that i'm going to have a hover effect here and on hover i want the background to have an rgba and this is just going to be a darker color okay let me actually make this two oh three three should be good now i'm going to have an active class 
+
+ Okay so one of these should be active this should be active by default that is the home so i'm going to have an active class and the background is going to be the color bg okay here's the variable we have in the index css and the color itself that is the text color is going to be color white so let's go back and give this a class 
+
+ Of the class name of active just so we can see that okay so by default we are going to have that as the active nav okay all right so we have this style okay now we want to be able to change the active class and put it on what we click okay so to do that we are going to use u-state okay so react hooks 
+
+ And we are going to use the use state hook okay so here we are going to import use state from react so the use state value is going to be active now and the update function here is going to be set active now and my default is going to be this okay and that is going to bring us to the top of the page 
+
+ All right so i'm actually going to remove this so if the active nav is equal to this then we want to give it the active class okay if not then we want to give it nothing so that is going to be no class okay so right now this is the value so we have it okay so if i should change this or remove this we won't have the 
+
+ Active class on it okay so that is how we are going to do it but what if we click on the about okay so on click of the about i want to set the state value okay so set active now i'm going to save that to about i'm going to do the same thing i did here okay so here i'm going to copy this class and i'm going to say if 
+
+ It is about that i want to give it the active class if not then it should have no class okay let's try this out let's go back and if we click this we should have the active class okay but what if we click back on the home page we want to reset this so i'm actually going to copy this copy and then paste it here okay 
+
+ I'm going to make this the hash okay so it's going to reset the state value to this hash that we have all right so let's try that so i have the active class on this but i if i click this i'm going to have it on the home okay so we can toggle between these two all right so i'm going to do the same thing for the rest of the links okay so i'm going to copy 
+
+ And then paste that and that's going to be the experience okay you're going to do the same thing here paste there's going to be services services and it's going to be contact okay and i hope this makes sense all right so let's try this out and everything works as expected all right so that is all for this 
+
+ Floating lab component now the next component is going to be the about component so i'm just going to close these two out and then let's go to the about okay so the about component that's what we are going to work on so looking at the finished project here in the about section we are going to have to direct them inside the section tag 
+
+ We are going to have this about me and then this content here okay he's going to have the cars and all these so let's go back to our code and we are going to have our h1 let's see we're going to have our h5 and then the h2 first before the actual content okay so we are going to have our h5 and it's going to say get to 
+
+ No and the h2 is going to say about me from there we are going to have the container and then the about and that's going to score container and that's going to be specific to the about section or the about component here all right so from there we are going to have two divs they are about and that's one that's 
+
+ Called me and it's going to have the image and another div this is going to be about and that's underscore content so this is going to have the image and let's put that image inside a dev okay with a class of about and that's going to call me image so let's get the image let's go back into our assets you know what we have to import it okay 
+
+ So i'm going to import the image from the assets and this me about the jpg okay so let me show you that image real quick okay so this image is what i'm importing here so we are going to use that here 
+
+ And the alt you can see that should be good so that is our image in here in the about contents we are going to have the cards so about and that's going to score cards each card is going to is going to be an article tag with a class of about card okay singular and this card is going to have an icon 
+
+ And h5 and then i think a small tag okay so let's have the icons you know what first let's have the h5 okay so this is going to be experience and the small tag three plus yes yes working experience now we are going to have the icon okay so let's go back to 
+
+ This i don't know the exact name of the icon so let me just search i would let me search our order instead let's see what we used here okay so that that does it okay so i'm going to use that so i'm going to come up here and import what we just copied that is the icon from 
+
+ React icons okay so down here you're going to use that icon as a self-closing tag and let's give this a class okay we are going to give this a class of about icon you can do about card icon it doesn't really matter here so i'm just going to duplicate this five times all two times sorry 
+
+ Let's see what we have we have the cards okay i'm going to search the other icons so the next icon is going to be users all the clients that i've worked with so i'm just going to use this come up here import that sfi use that down here 
+
+ The next one actually this is going to be clients okay 300 plus clients worldwide this next one is going to be the projects that i've worked on the number of projects 80 plus completed projects so let me see i'm going to save your library or folder 
+
+ I'm going to use this copy come up here duplicate this and it's going to be the vsc okay vsc save come back let's see what we have and we uh let's see in this shot did i not change that all right so i should change that save and we have all three cards okay now the last thing we are going to have 
+
+ Is this paragraph and then the button okay so below the cards we are going to have a paragraph let's just do lorem 30 and below that we are going to have the button and that is going to take us to the contact section of the page let's give that a class of btn and then btn primary 
+
+ And that is all for the jsx that is all for the jsx okay now let's head on to the css and then give this some styling now let's get the about container class and i'm going to display grade the grid templates columns is going to be 35 percent for the left and then 50 for the right the rest is going to be for the gap okay 
+
+ So the gap is going to be 15 right so i'm going to get the about me that is the image side okay that is um where is it that is this side okay so that is going to be the about me and i'm going to give that a width of a hundred percent and an aspect ratio of one is to one okay so it's going to the height is always going to match the width so they're all always going to be 
+
+ The same value i'm going to give that a border radius of 2 ram and a background is going to be a linear gradient so 45 degrees transparent color primary and then back to transparent i'm going to display this grid just so i can place the image itself into the center okay so i'm going to place items to the center and it's going to put the image right in the middle 
+
+ All right so now let's target the image div itself okay so about me and then the image i'm going to give that a border radius of 2 ram give it an overflow of heading and i'm going to transform and rotate it 10 degrees now let's see what we have and i have a problem okay i'm transforming and rotating okay so i have that now i want to be 
+
+ Let me actually show you real quick in the finished project you see the image fixes itself on hover okay so on hover the rotation is going to be zero degrees okay so let's do that so let's get the main image and on hover you're going to set the transform rotate to zero degrees and that is happening too fast so we are 
+
+ Going to add a transition transition of the variable transition save and we have a smoother hover effect all right now let's move on to the right side okay i'm going to get the about cards okay i'm going to display that grid a great template column c is going to be repeat 3 times 1fr 
+
+ And the gap here i'm going to make that 1.5 frame now i'm going to get the individual cards and remember we gave them a class of about card and i'm going to give them a background vg variant okay here is a variable in the index.css right here we have the vg variant so that is what we are using here let's give them a border 
+
+ Of one pixel solid transparent a border radius of one rim i'm going to give them a pattern of two ram and text align everything to the center all right so we have that now on hover i want to have some styles okay i want to have some change on hover so the background first is going to be 
+
+ Transparent the border color is going to be color primary variant and that is another color inside the index css all right so we have that now i want that to be smooth so i'm going to add the transition of the variable transition okay so we have a smoother over effect 
+
+ Now on the cursor to be default now i'm going to target the icons okay so about cars or we actually give them a class of about icon let me change the color for those to be color primary font size 1.4 ram and i'm going to give them a margin bottom of one ramp now let me get the h5s about card and then the h5 the font size here is going to be 0.9 
+
+ Rare and make that 9.5 room now i'm going to get the small tag so about card and then a small tag give them a font size of 0.7 ram and a text color of color like save and we have this so now i'm going to get the paragraph okay the p so um about content and then 
+
+ The direct p inside of it i'm going to give that a margin of 2 for the top 0 for the left and right and then 2.6 for the bottom okay let me give color of color light all right so that is for the about okay that is for the desktop now let's have the media queries okay so actually let me go into the nav so that i can just copy um the media queries 
+
+ Or do we know how any media core is there let me go into the header okay so the header css to have the media queries okay so i'm going to copy and then paste all right so we are going to have two media queries here and we are going to start with the tablet version okay so on tablets i want to get the about container 
+
+ And then the grid template columns here is going to be one fr let me actually put this side by side so that we see what's going on okay so that's what we have and make it a little smaller okay so the container is going to have a great template columns of that and then i'm going to zero the gap now let me get the about me 
+
+ And make the width of that to be fifty percent okay give that a margin of two ram auto and then foreign for the bottom all right so we have that i'm going to get the p that is the contents p this content then the p 
+
+ Is going to have a margin one ram for the top zero for the left and right setting 1.5 for the bottom all right now let's move on to mobile phones so on mobile i want to get the about me and change the width to 65 percent the margin is going to be actually that is zero 
+
+ Auto already right okay so it's not so the margin here is going to be zero auto and then three ram for the bottom now i'm going to get a cars about cards and the grid templates columns here is going to be one of our one fire the gap is going to be one rim now i'm going to get the 
+
+ About content and text align that to the center okay now let me get a p okay so about content and then the p tag the margin is going to be 1.5 frame so 1.5 ram for the top and bottom and then 0 for the left and right okay so this is what we have and ignore this experience here that is experience section we are going to get to that in a little bit 
+
+ But this is what we have so far so let's see how this actually looks on mobile and on tablets okay so this is how it looks on mobile and this is how it looks on tablets okay now let's go back and then let's continue with the next section or the next component which is going to be the experience 
+
+ Okay so let's move on to that so i'm going to close this about and then moving to the experience all right so here we are going to have our h5 and that is going to say what scales i have or the skills i have it doesn't really matter here okay so we are going to have an h2 and below that we are going to have the container class okay 
+
+ So inside here we're going to have two divs okay two direct the the first one is going to have a class of experience and that's called fronts and you can leave the class it doesn't really matter we're not going to target the class but you know just for you to see what's going on and then back end okay so from the finished project okay so these are the two cards we have 
+
+ The front end and then the back end right so inside this we are going to have an h3 for the heading and then we are going to have this okay so each one of these is going to be wrapped inside an article tag in every article tag we are going to have let's check icon and h5 and then this small 
+
+ Tag okay so let's go on and do that and let's go into say fonts and development and below that we are going to have a debut a class of experience content and even in the back end we are going to have the same class okay so that we have only one style for both of them all right so as i said we are going to wrap each of them inside an article tag 
+
+ And actually we are going to give that a class of experience details so in here we are going to have the icon which we are going to import so let's say check um let's see so this is what i'm going to use okay so i'm going to import that from react icons so let's bring that in here 
+
+ There's going to be a self-closing tag let's save and let's see what we have so we have that okay so i'm going to have the h 4 that is going to have the programming language or the scale and then a small tag okay for the experience so um this is going to be experienced 
+
+ Let's actually give this a class of text light okay we can actually leave this and then style that inside a css but let's just give it this class okay so that we have it great already okay so that is one that's a column we actually copy this duplicate it uh i think five times so from html we are going to have uh css and that is going to be intermediate from there we are going to have 
+
+ Javascript let's say experience let's leave it we are going to have bootstrap experienced tailwind experienced you can do view angular what's anything okay it depends on what you know so if you know all of them you can write them you can add them to this list and 
+
+ There's also going to be experience okay so react is going to be experienced and now let's save and see what we have and we have this okay so i'm just going to copy everything in here and then paste it inside the back end okay we're only going to make some small changes that is the content itself so the heading here is going to be back end 
+
+ Development so here we are going to have let me actually leave a link a comment here so we are going to have node.js okay mongodb php intermediate mysql you can do basic if you want python and we're only going to have five 
+
+ For the backend so let's save let's check that out and we have the back end all right so now that we are done with the markup or the gsx let's move on to style this okay so let's go to the css so we are going to get the experience container okay and then display that grid a great template columns is going to be one of our nfr so 50 percent on the left side and 50 on the right 
+
+ And then give them a gap of two ram let's see what we have and we have this now i'm going to get the direct divs inside this container okay so i'm going to get the front end of the back end and then the front end um depths right here okay so those are the direct dips inside of this container i'm going to give them a background 
+
+ Of color bg variants and then the pattern of 2.4 mm for the top and then 5 two point frame ram for the top and bottom and then five frame for the left and right border radius of two ram border of one pixel solid let's actually do transparent here let's save and see what we have and we have this 
+
+ All right now i'm going to get the h threes okay so um the headings that we have here i'm going to get that actually before that i'm going to have a hover effect for the two cards okay so on hover i want to change the background to transparent the border color is going to be 
+
+ Color primary variant and it's going to have a case of default right now let's go ahead let's actually check that out and we have this okay that is actually too sharp so i'm going to add a transition of all actually let's use the variable transition and i should make it smoother let's go back and then start the headings okay so i'm going to get 
+
+ A direct divs and then the h3 inside of it i'm going to text align that to the center give that imagine bottom of two room and the color of color primary save let's see what we have okay so we have them now let's target the content okay so let's target this content so the experience content 
+
+ And we are going to display them great okay so the display is going to be great the great templates columns is going to be one of our nfr save let's see what we have to ram okay so that we have some space between them which is great it is looking great now i'm going to get each of the articles or each of the article tags and remember we 
+
+ Gave them a class of experience details okay i'm going to display them flex and then give them a gap of one room uh let's see [Music] you know what i'm going to put this inside a div tag okay i'm going to do that for all of them 
+
+ So i'm going to copy this put it inside the div tag all right save go back and we have this okay so that is for the details now i want to you can see the icons are not really where it's supposed to be okay so um let's target the icons and remember we gave them a class of experience details i can okay so i'm going to push that down with margin top of 6 
+
+ Pixels and then a color i'm going to make the color color primary save uh i guess i did not give that a class oh okay so let me let me target all of these let me get all of them and i'm going to add that class real quick 
+
+ A class name of experience it tells i can save oh i guess i changed this as well okay so i'm just going to remove this save and we should have our experiences okay just like in the finished project all right so that is for the experience now 
+
+ This doesn't look really good on smaller devices so that is what we are going to do let's make this responsive let me actually go back into um one of these so i'm going to get this come back to the experiences and paste that in so on tablets i'm going to get the experience container class the grid 
+
+ Template columns here is going to be wonderful i'm going to get the experience container and then the div the direct dips inside of it okay which are these two so i'm going to get them and then the width here is going to be 80 percent the pattern is going to be 2 ram and the margin is going to be zero auto save and we have this 
+
+ All right now let's see let me get the experience content and the pattern here is going to be one room so that is for the tablets now let's go to the mobile phones and the experience container class is going to have a gap of one ram on mobile phones this is looking pretty weird 
+
+ What is wrong here that is because i gave our section a height okay so we should remove that that is the height i gave it we should remove that all right so that fixes it all right so here i'm going to get the container again and then the direct devs inside of it the wreath here is going to be a hundred percent 
+
+ And the padding is going to be two ram one ram okay so two round for the top and bottom and then one round four the left and then the right and i think i have a problem with my container viewport oh it should be sm all right now let's see how it looks on 
+
+ Actual phones and this is exactly how it's going to look on phones all right let's see how it is going to look on tablets and it looks great okay so now let's move on to the next component and that is going to be the services component okay so let's close these files and move on to the services component now this is going to be just like the 
+
+ Experience um components okay so here we are going to have our h5 what i offer an h2 and then we are going to have our container class okay so services container so inside the area once we have three cards each is going to be an article tag with a class of service so inside each of the cars we are going 
+
+ To have a david a class of service head and that is going to have an h3 and this is going to be ui ux design and we are going to have an unadded list a uo with a class of service lists okay service underscore list and each li is going to have a check as we have here in the finished project 
+
+ Okay so we are going to have this check and then i think there's going to be a paragraph okay repeat that so let's see let's actually search a check let's use this one okay copy that and i'm going to import it here react icons let me actually give this a class okay so a class of service list icon 
+
+ And we are going to have the paragraph let's do lorem 8 that is even too much save let's see what we have all right so we have this great now i'm just going to duplicate this ally a few times let's do six times save let's see what we have 
+
+ Okay so that's not bad actually i'm just going to make this five and then okay so that is our first card i'm just going to copy whole thing that is the article tag duplicate it twice okay we are going to have three cards as you see here in the finished project we always have three cards so the second one is going to be 
+
+ Web development okay so it is going to be end of web development so let's go up change this to web development okay i'm just going to increase the list here by one the next one here is going to be content creation okay that is another service so 
+
+ End of content creation and it's good okay so that is all for the markup okay that is all for the jsx now let's go to the style sheet that is the css and give this some styling here i'm going to get the services container class and then display to grade the grid template 
+
+ Columns is going to be repeat three times one fr let me give them a gap let me leave a gap between them a gap of three ram should be good okay so we have that now let's target each service that is each article tag with a class of service let's give them a background of color bg variants okay border radius of 0 
+
+ For the top left 0 for the top right 2 ram for the bottom so we have that as you can see here all right so the border is going to be one pixels solid and then primary the height is going to be content fit or fit content and i'm going to have um a hover effect okay so the transition here we are going 
+
+ To use the variable transition okay so this is what we have pretty ugly well we are going to work on that as i said we are going to have a transition a hover effect so the background is going to be transparent the border color is going to be color primary variant and then the cursor is going to be default okay so we have the whole effect 
+
+ Now i'm going to get the head okay so the service and that's going to go ahead let's give that a background of color primary give it a pattern of two ram a border radius zero zero two ram two ram and a box shadow okay of zero on the x axis to ram on the y axis one room for the blur igba zero zero zero and then 
+
+ Zero points one okay so black weights 10 percent or 90 transparency really all right so that's what we have still pretty ugly but let's proceed and get the h3 inside the service head okay so let's get h3 and we are going to change the color to color bg the font size is going to be one ram and we are going to text a line to the center 
+
+ Okay so we have that now let's target the contents and then or the li sorry they are added lists so we give that a class of service list we're going to give that a padding of two ram okay so it is looking pretty good already now i'm going to target the li okay so the li inside the ul is going to be displayed flex 
+
+ Let me give this a gap of one ram an imagine bottom of 0.8 ram save let's see what we have that's what we have now let me target the icon okay the icon is looking pretty weird so service lists i can i think that's the class we gave it as you can see here so we are going to change the color to 
+
+ Color primary and imagine top of two pixels okay to push it down a little bit i'm going to get a p okay so service list and nfp the font size is going to be 0.9 ram and this is what we have and this is not bad all right now let's have the 
+
+ Media queries okay this doesn't look really good on uh smaller devices so let me just go back here and copy this again come down let me close the about all right so let's see what do we want to do here in the on tablets so on tablets we want to get a service 
+
+ Container and the grid templates columns here is going to be one of our nfr and give it a gap of two ram okay so on tablets this is what we're going as well now let me get this service that's that's a cover the class of service and the height here is going to be auto okay so we have this 
+
+ Now let's go on mobile and let's give that some style as well so i'm going to get the service container and then the great templates columns are going to go on a gap is going to be 1.5 ram and that is all we have to do here okay now let's see how it is actually going to look 
+
+ On real devices so you can see the services section is working great this is going to look on mobile so that is for the services and now let's move on to the portfolio component or the portfolio section so i'm going to close these two and then go into the portfolio let's have our h5 
+
+ H2 and below that we are going to have our container class okay and portfolio and let's go underscore container now in here our portfolio items are going to be or each of them is going to be inside an article tag let's give this a class of portfolio item and then inside of it we are first going 
+
+ To have our image so there is going to be a div with a class of portfolio item image below that we are going to have the title this is just going to be an h3 and below that we are going to have our call to action buttons okay so we are going to have two links the first one going to lead to the github of the project and then the second one going to the 
+
+ Live demo of the project okay so there's just going to be a link and it is going to go to github dot com slash your project okay so you go to your project on github you copy the url and then you paste that here so it is just going to say github let's duplicate this actually let's give it a class btn okay let's give it a bt and a class 
+
+ This is also going to have a class of btn and then the btn primary class and this is going to go to the live demo of the project for now let's just do we are going to use the images we are going to use is going to be from drebo okay so the image we are going to use is going to be from this user on dribble okay actually i don't think you can even use this in production okay so 
+
+ Let's just to show you all this i just cool images i just wanted to have in this project okay but i'm going to use their link here as a url or the href just to give some credit and let's actually make this open in a new tab okay so let's give it a target of underscore blank 
+
+ Okay so that this opens in a new tab let's do the same here okay so those are the two links and for the image let's import our first image we are going to have um six portfolio items here so we are going to import all the images here um let's just call the first one img one 
+
+ And we are going to go into our assets and get the portfolio one dot jpg okay let's see let's check that real quick so we have portfolio one to portfolio six okay so these are the images we are going to use all right so we are getting the first one let's just duplicate this five times 
+
+ And change the numbers okay so this is going to be portfolio two there's going to be three i want you to have the fourth one fifth and the last one okay which is this is one now let me delete this one and we can use that image right here okay so 
+
+ Our img tag and the source is going to be the first one here the odds let's just leave that empty for now but we are going to populate okay with the title of the project okay all right and um i have an arrow here let's check our projects what is wrong portfolio five oh there's a png okay that is a png so 
+
+ Let's just correct that dot png all right so now we don't have that error okay so i'm actually going to have an array of six portfolio objects okay portfolio attempt objects that we are going to map through okay but before that let's just have some 
+
+ Hard coded markup here or jsx here just so we can style it okay so we're going to come back to the jsx and then actually look through the array that i'll be pasting in here okay so let's see what we have first all right so not too bad just to make sure it should be six okay one two three four 
+
+ Five six it's actually seven so i'm going to remove the last one save and we should have six portfolio items okay so let's go into the css style this and then we'll come back to generate this dynamically okay so let's go into the css i'm going to get the portfolio container 
+
+ And i'm going to display that grid the grid templates columns here is going to be repeat three times one fr okay let me give them a gap or a gap between them is going to be 2.5 frame let's see and we have this now let's get the portfolio items okay so portfolio underscore items that is the article with the class of portfolio items let's 
+
+ Give them a background of color bg variant a pattern of 1.3 ram a border radius of 2 ram a border of one pixel solid and it is going to be transparent for now but we are going to have a hover effect so let's give it that transition variable and now for the hover this should be portfolio item okay 
+
+ So on hover let's change the border color to color primary variant the background is going to be transparent okay so that is on over let's see and we have this right now let me actually make this to 1.2 
+
+ Now let me style the image okay so i'm going to that we gave that a class of portfolio item image let's give that a border radius of 1.5 frame and an overflow of hidden alright let's get the title the h3 so portfolio item and then the h3 inside of it let's give that a margin of 1.2 ram for the top zero for the left horizon and two 
+
+ Round 40 bottom okay so let's check that um portfolio item and h3 why is that not working oh this should be ram all right so we have that all right so now let's target the call to action buttons okay so let's give them always have some space between them portfolio write them and then the cta i 
+
+ Think we gave that a class of cta let's check um oh you know what let me just reverse this real quick and i'm going to correct this okay so these two these two should be inside a david a class of portfolio item cta okay so that is going to wrap around 
+
+ Them so i'm just going to copy the article tag and duplicate it five times i hope that is five okay let's check and we have six okay exactly what we want let's come back here and here i'm going to display them flex and give a gap between them a gap of one 
+
+ Ram should be good imagine bottom of one point let's just do one rim save and we have this okay not bad all right now this doesn't look good on tablets and then mobile phones so we are going to write the media query real quick okay so let's get back here i'm going to paste that 
+
+ And remove this all right so we are going to start with the tablet as usual and on tablets i want to get the portfolio container and change the grid templates columns and i'm going to change the grid templates columns to one of our 1fr okay so 50 on the left 50 on the right the gap is also going to be reduced to 1.2 ram 
+
+ And that is all for the tablet now let's come down here to the small devices on mobile phones they're going to get the portfolio container here again and then the grid templates columns here is going to be 1fr and one more time you're going to reduce the gap okay so this is how it's going to look on mobile all right let's actually 
+
+ Check that on a real device let's see on tablets okay so the styling for this portfolio ignore this arrow okay the styling for this portfolio is all done now as i said we are going to generate our portfolio items dynamically using the array map function 
+
+ So right here i'm just going to have only one portfolio item and i'm going to paste in an array of some portfolio objects that i have here okay all right so right here we have our data array with six of the objects and each object has an id okay it is going to be the unique key for our map we are going to map through this so we are going to have a unique key we should have a unique key 
+
+ We have the image that we are going to use so the first one is going to have the img one that we've imported here the second is going to have the img2 the third is going to have an mp3 and on okay so notice the ids are different as well for each of them we have the title and i got that from this page okay so i just click on the image that i'm going to use it in 
+
+ I use the title they have here okay and once again i'm giving credit to this person here on dribble for the amazing um profile okay so let's go back and we have the github okay so here i'm just doing github.com okay but you should have your real github um project link here and also the live demo is going to link to the picture that i'm going to use here 
+
+ Okay all right so that is all for this array so here we are going to let me just copy this let me cut actually let's enter javascript mode and we are going to map through the data array okay and let's destructure the id the image the title the github 
+
+ That is the github link and then the demo link as well okay let's retain the article okay the article tag all right so here the image here the mg here had coded is going to come from this it's going to be this okay so that is going to be that and as i said each article tag here should have a unique 
+
+ Id okay so a unique key of the id that we have okay these ids are different so that is going to make it unique each of them is going to be unique there the art is going to be the title the title here is going to be the title as well the link here to the github is going to come from the array so that's going to be the github link 
+
+ And what else and the live demo is going to go to the live demo link okay so demo all right so let's save and then see what we have and we have are dynamically generated portfolio items okay all right so let's see how this looks on real devices and this our website is going to look 
+
+ Well this is how the portfolio section is going to look on tablets let's see on mobile phones and this is how it's going to look on mobile phones so you can click to get to the github or the live demo and they are both going to open in a new tab okay let's close this and now let's move to the next 
+
+ Component which is going to be the testimonial section okay let's quickly move to that i'm going to close this up and move into the testimonial component let's have a h5 or h2 and then we are going to have our container class okay all right and inside of it we are going to have our individual testimonials and that is 
+
+ Going to be in this article tag with a class of testimonial okay singular all right and in here we are going to have first our client image and that is going to be a day with a class of clients avatar and that is going to be an image right so i'm going to import let's say from 
+
+ Let's go back into our assets and grab let's see so we have this that is avatar one dot ph um png or jpg jpg okay so avatar one dot jpg that is the first one i'm going to duplicate that three times and make the changes real quick there's going to be two i want to have the three come on 
+
+ And then d4 okay so we are only going to have four four images that we are going to use so the source here entire javascript mode and then mvt come on nvtr one the saucy i'm going to just say for now okay let's see if we have something in here and we have it all right 
+
+ Now below that we are going to have the name and that is just going to be an h5 uh let's just hard code this for now and below that we are going to have the review okay the clients review let's give that a class of client review and let's actually give this a class as well okay so client name all right so we have those now let's put 
+
+ Something in the review let's just do learn 30 for now we're also going to generate this dynamically okay so i'm going to have an array of some testimonial objects that we are going to look through okay but before that let's just see what we have and then i'm going to duplicate this three more three times 
+
+ Just so we can style it okay so we are going to go ahead into the css give this some styling and then we will come back to generate this whole thing dynamically okay let's get the container wrapper okay so testimonials one thing i want to change the width i'm being very specific here the width here is going to be 40 percent let's actually put this side by side so that we see what's going on 
+
+ Okay so the width here is going to be 40 all right so below that we are going to get the avatar okay um we give that a class of clients avatar the width is going to be for m and let's set the aspect ratio to one is to one so the width is always going to be the same as the height let's set overflow to hidden save no we i think we give that a class let's 
+
+ See the image we give that a class of clients avatar so what is happening let me remove that all right oh i think we made a big mistake everything is inside the client about that okay so i'm going to remove that that shouldn't be the case let me 
+
+ Actually revert back to this remove it before we duplicate it okay so i'm going to copy the article tag again duplicate it three times all right so that's what we want so here i can do overflow heading and we will still have our text okay which is what i want now 
+
+ The border radius here is going to be fifty percent to make it a circle i'm going to set the margin to zero or two and then one ram let's give it a border of 0.4 ram solid and let's have the color primary variant this should be variance save and we have that okay now let's target the individual 
+
+ Testimonials and we give that a class of testimonial okay singular now the background is going to be the primary variant let's take the line to text align to the center center pattern of two ram a border radius of two ram and user select off none okay we shouldn't be able to 
+
+ Select this that is what i'm setting them to none okay oh this should actually be bg variant okay not primary variant this should be bg variant okay so we have that now let's move on to the review okay this text that we have here let's get that so we gave that a class of clients review so we are going to change the color for 
+
+ That to be color light the font weight is going to be 300 i think that is 300 already okay but let's just keep that let's display block let me check whether it's really okay so it wasn't 300 bucks now it's 300 okay now the width here is going to be 80 and the margin is going to be 0.8 ram for the top auto for the left and right and then 0 for 
+
+ The bottom save and that's what we have great now i'm going to have some media queries here okay before we actually move on to making it a slide i'm going to have the media queries so let me just copy this paste id 
+
+ And remove this all right so let's have a very simple media query here so one tablet i want to get the container and then the width here is going to be 60 on tablets okay and we are going to change the width here as well on mobile and that is going to be the variable container with 
+
+ Sm all right now on mobile we are going to change the width of the client review as well so client review that is going to have a width of the container with sm okay save and we have this all right this doesn't look great but we 
+
+ Are going to have we are going to use swap.js to make it a slide just like we have in the finished project okay to make it this light so um but even before that let's generate this dynamically okay let's generate this dynamically as i said i have an array of some testimonial 
+
+ Objects that i'm going to use here so i'm just going to copy them and then paste it in okay so i have this data array with these testimonial objects that i have okay so we have the avatar which is going to be the image and we've imported all the four images that we are going to use here we have the name the first is thinner snow we have the second one here which is 
+
+ Chatawale we have the reviews as well for each of the objects that we have here okay so here i'm just going to remove the hard coded reviews so let me remove this article tag i'm going to cut it and we are going to enter javascript mode and map through this okay so so using the array map method we are 
+
+ Going to face the structure all day we are going to have the avatar the name review and we don't have a unique key here so let's use index okay let's have an index here and now we are going to return the article tag all right so in here we should have a unique key so key is going to be the index let's see 
+
+ This is going to be the avatar that is the image or we should just remove it okay the name here is going to be generated dynamically so we are going to have the name and lastly we are going to have the review okay and that is going to come from yeah okay so we are going to have this which is this review all right so let's save 
+
+ And see we have uh oh i made a terrible mistake here i guess it should be the third one here and then the fourth one save and we have them okay now the alt now the actual review is the same for all of the 
+
+ Objects as you can see here they are the same thing if i showed change this to let's say then we are going to have some kind of dynamic okay data here okay but you know let's just keep it real here so you can have your real clients testimonials here okay and they're going to be generated dynamically all right so now that we've done that 
+
+ Let's actually make the slice okay so for that we are going to use let me close this we are going to use swiper js so let's go to swiper.js.com and here we are going to click on react i'm not really going to go in depth with swipe.js i'm just going to follow to make sure our project is complete but swap out you can actually go to the demo and then see the various swipes or the slides that i have 
+
+ Okay so it is the first example we have these ones as well we have these that's the pagination is what we are going to use okay but we are going to use the react so you can actually click the react here and i see it but we've already clicked this okay so that is what we are going to do here so let me close the demos and here first we have to 
+
+ Actually install swipe.js in a project okay so i'm going to the npm install swiper and this is going to take a while so let's just relax and make this installation finish all right so swipe.js is installed okay so as you can see here you first have to install it and that's what we just did so let's scroll down 
+
+ And i'm going to grab this okay i'm going to grab all these everything from here copy and then paste it in here okay we are going to import that our project so i'm going to paste and then i'm going to use the pagination okay so i'm going to remove this navigation and then the scroll bar i don't need that and here also i'm going to remove the navigation 
+
+ And the scroll bar i just need the imagination okay now let me go back and as you can see here each slide should have this component tag okay in our case that is going to be the article with a class of testimonial okay so this should be the swiper slide okay so i'm just going to 
+
+ [Music] replace that with the swiper slide and the parent of this should be the swiper okay so i'm just going to copy this and the point of this article or this swiper slide here is going to be this okay so that is going to be the swiper let me replace that with this save let's see our project 
+
+ And we have this already okay now let me go back and copy this let me copy this go back to the project and that is going to be here okay inside of this let me just paste it and as i said i don't need a navigation i don't need a scroll bar as well i'm actually going to remove all of this okay i don't need the console log and 
+
+ All that but the slide per view here is only going to be one and the space between is going to be 40 pixels okay i'm going to make that 40 pixels save actually let me just remove this navigation and all that i don't need them i only need the pagination and that is what i'm actually 
+
+ Importing from here okay okay so this is our testimonials now if you don't have this pagination okay if you if you don't have that then you may want to import navigation okay navigation and just what we copied here you may want to just leave that in okay you may want to just leave this okay 
+
+ But you know mine is working so i'm just going to remove those i just need the pagination okay so one thing i want to do is this is on top of this okay i want this to be down here so let's go back into the css and um here i'm going to give it a pattern of forum a pattern bottom 
+
+ Forum okay that is the container class i'm going to give that a pattern bottom of forum let's see and we have that okay now notice this blue doesn't really correspond to the primary color that we have and so we are going to change that as well so let me come down here and 
+
+ We can actually just inspect this so i can click it and inspect this to see the class so let me just copy this class and this is what we are going to target so swipe up a generation bullet and then actually let me get the clickable and also the swipe up pagination bullet okay not the active the bullet let's give that a background of our primary background our primary 
+
+ Colors so let's save and we should have our primary color here okay now let's see how this actually looks on tablets and then mobile phones so that's how it's going to look on tablets let's see how it is going to look on mobile phones as well and this is it okay we have uh media queries here already 
+
+ And that is why it is that responsive all right so that's all for this testimonial section or this testimonial component i'm just going to close that up and we are going to move on to the next component which is going to be the contact okay so let's head into the contact component all right so let me show you something real quick in the finished project we have this left side which is going to be 
+
+ The contact options okay and then we have the form on the right okay so each of these is going to be contact option which is singular and so let me actually close the swipe.js since we are done with it so that's how we are going to structure this but first let's have a h5 that's going to say get in touch 
+
+ And our h2 okay all right so below that we are going to have our container class and our contact container class as well and that is going to be specific to this contact section or this contact component and in here as i said we are going to have the contact options okay that is going to be on the left and on on the right we are going to have the form 
+
+ So in here we are going to have an article tag with a class of contact option singular and for each contact option for each contact option we are going to have the icon this h4 and h5 and then a link okay that is going to be for each of these so first you know what's let's ignore the icon for now and then let's have the h4 
+
+ The first one is going to be email we're going to have an age 5 and that is going to have our email okay so that's my email below that we are going to have a link an anchor tag and the href for this is going to be mail to colon and then the email okay our email okay so whenever someone clicks on this link 
+
+ Your email is automatically going to be populated okay and this is just going to say send a message and i should have the icon so let's go back to the react icons library here and there's going to be email let's use this i'm going to use that one so let me just import that from the react icons library and there's md okay 
+
+ And i'm going to use that down here self closing tag let's save and see what we have in the project and we have this okay so that is one contact option we are going to duplicate that twice the second one is going to be messenger okay so this is going to say messenger facebook messenger is going to do we get the tutorials 
+
+ For the url here we are going to do https m dot me slash your profile okay so let me go to facebook and show you something real quick i actually don't use facebook that much i barely go there but just for this tutorial i'm going to show you something all right so on your profile okay on your facebook profile you should have your unique 
+
+ Sub domain okay or sub link or whatever it's called you just copy that come back to the project and then we are going to paste that in okay so this url and then slash your profile id or whatever it is okay let me close this that is going to be messenger that is facebook messenger and this is what i used so i'm just going to copy 
+
+ That come up here duplicate this replace that and this is going to be ri all right let me actually get the other icon as well and that is going to be whatsapp and this is what i used so i'm just going to copy that come back duplicate this now let's come down here here we are going to have what's 
+
+ Up let's just paste the icon we just copied this should be the messenger so i'm just going to copy this and then replace that and here you can have your whatsapp number okay but in our case we don't want people to save our number before the message us okay so here we are only going to have a link and by clicking on this link what's up on their phone on their device is going to be loaded okay so it's going 
+
+ To open our number on whatsapp okay if they have whatsapp installed on their phone that is going to be loaded or what that is going to be launched and then they can message you directly let me just stop talking and then show you what i mean okay so the link we are going to use here is https i'm going to use the whatsapp api link 
+
+ Dot whatsapp.com and then we are going to send a message to this phone number okay so here we are going to put in our phone number and i'm going to blend this out okay you should have your number here okay you should put your number here including the country code okay and maybe the state code depending on where you're from 
+
+ And that is all okay so that is all you have to do here so now let's save and let's test these three options out okay so let's go to our project and for the email i'm just going to click the link and it is going to open my mail and i have my email populated here okay so anyone coming to your website can 
+
+ Just click that and your email will be populated here so they can just go ahead and type in your message okay you don't have to copy your email before they actually open their gmail to type anything okay they can just click it and it is going to just populate everything now for the messenger actually you know what let's go back and make this open in the new tab okay so 
+
+ Let's give that the target of underscore blank let's do the same for the other two now let's try the messenger again so i'm going to click messenger and they can type in the direct message here so that's how that works let's close this and for the whatsapp i have whatsapp 
+
+ Installed on this laptop okay so i can just click it all right so i have what's up on my laptop that is why it's going to launch whatsapp so anyone visiting your website clicking that is going to have the hours up launched and they are going to message you directly on whatsapp okay they don't have to save your number before they 
+
+ Message you so right here they can just enter a message and then send that and now let's have the form okay we are going to have a form there is going to be another option and they can message you through that form as well and you're going to receive that in your email okay so let's have the markup or the jsx for the form 
+
+ And this is going to be the only form on our page so i'm not going to bother to give it any class so let's have an input and the name of this is going to be name so i'm going to give this a placeholder of your full name and this should be required so that people don't send empty fields okay so that's just some front-end um 
+
+ Or client-side validation there let's have an input of email and this should have a name of email or any name that you want to give it and a placeholder of your email they should be required as well the last one is going to be the text area and this is going to have a text area a message so actually 
+
+ The row here is going to be let me make that 7 i'm not going to need the columns and the id but i sure i'm going to need a placeholder your message and i'm going to make this required as well all right so that is the text area let's save and see what we have now let's have a button 
+
+ With a type of submit and it's going to say send message let's actually give it a class of btn and then btn primary all right so that is all now let's head to the css and give our contact component some styling all right so right here i'm going to get the container and then the contact 
+
+ Container i'm being specific here because i'm going to resize the width to 58 percent let's display this grid and the grade templates columns here is going to be 30 for the left and then 58 for the right okay the remainder is going to be for the gap that is going to be 12 right let's save and we have that 
+
+ Now let's move on to the contact options okay so contact and that's going to options let's display that to be flex the flag direction is going to be column and give it a gap of 1.2 ram save let's target each contact option okay that is singular 
+
+ Let's give them a background color variant color bg variant a pattern of 1.2 ram a border radius of 1.2 ram as well let's text align everything to the center and give it a border of one pixel solid and here is going to be transparent for now but on hover it is going to change color okay so 
+
+ Let's have a transition here that is the variable transition so let's see what we have here so that is it we are going to have we are going to have a hover effect background is going to be transparent and the border color here is going to change okay so that is going to be the variable 
+
+ Color primary variant so we have a cool over effect now let's get the icon okay so i think we gave that a class did we give that a class of no we did not okay so here each icon is going to have a class of contact option icon let me copy and then paste for 
+
+ The two other icons save come back here and this is going to be what we are going to style okay so here i'm going to change the font size i'm going to increase that to 1.5 frame and give it a margin of let me do margin bottom of 0.54 okay save and we have this all right now i'm going to target the 
+
+ Anchor tags that is contact option and then the anchor tags inside of it give it a margin top of 0.7 ram i'm going to display inline block and font size give it a font size of 0.8 ram save and and that is all for this contact options section okay now let's target the form 
+
+ So let me actually leave a comment so let's get our form and display that to be flex flex direction is going to be column and give it a gap of 1.2 ram okay and we have that now i'm going to get the input and then the text area okay so the width for that is going to be a hundred percent give it a pattern of 1.5 frame a border radius of 0.5 frame 
+
+ A background let's make that transparent okay a border of 2 pixels solid and color let's do the primary variant i'm going to set the resize for the text area to be none so that we can't so that we can do this okay so let me save 
+
+ And now that is not possible all right let me refresh this okay now let me change let me show you real quick okay so the text here is not really visible the contrast is now clear so i'm going to make the text white save and we have that okay so now we can type 
+
+ Great now let's make this responsive okay so um i'm going to go back to this and then copy and paste the media queries okay so let me remove this make sure i'm closing this and in here on tablets let's see what is happening on tablets i want to get the container so contact 
+
+ Container and the grid templates columns here is going to be 1fr okay let's make sure okay so it's going to be 1fr and the gap is going to be 2 ram okay now on mobile let me just copy this on mobile i want to have the width set to 
+
+ Come on let me just this already 1fr so let me remove that and here the width is going to be set to the variable okay so the container with sm and that is going to be for mobile so let's shrink it to mobile and we have it okay let's actually see how it's going to look on a real device okay so that's how it is going to look on mobile 
+
+ Let's check it on tablets and that's how it's going to look and that is all for the styling okay now let's go ahead and then use email.js to send meals from this contact form okay so for that we are going to go to email.js.com you may want to sign up but i have an account so i'm going to sign in 
+
+ And you may have a default service here okay but you can even delete that if you want we are going to create a new service actually let me just delete this okay the old one i'm going to delete that so we are going to create a new service and the service we are going to use is gmail so we can just leave it like that you can name it anything you want but let's just keep that and then 
+
+ Let's connect the email that we want to receive the messages in okay so we are going to connect the email okay so you select the email you want to connect okay and then we can proceed to create the service all right so our service is created now we want to create an email template okay so let's create actually you know what 
+
+ Let me go back and i'm going to delete the old template and here i'm going to create a new template okay let me remove everything in here and the subject okay the subject here you can just say okay you can just do that since we don't have any field for subject okay or if you have a field for subject then 
+
+ You can do three curly braces and then the name you gave to that field okay so this would correspond to the name you give to the field the subject field that you created but we don't have a subject field so that is why we are going to keep this the way it is okay we are going to make it this way so that we know this message is coming from our portfolio website 
+
+ Okay so here how do you want to receive the message okay so first we want the name of the person okay and they should correspond to the name we gave to that field so from the source code let's see in the jsx remember this name okay so the name for this first field is going to be name that of the second field is going to be 
+
+ Email the third one is going to be message okay so that is where that is what we are using here okay the next one we are going to have our email or the email of the sender and then the message itself the message so now we can save this template and test this out okay so let me enter the name here let me enter random name that's the email 
+
+ And we can hit send okay and the message has been sent since we get a 200 here okay so let's check our email let me just remove these okay so this is the message we just received there's the name the email and then the message itself okay now let me close this up 
+
+ Now to link this template to our website or our form on the website let's open a new tab and then search react email js okay let's click this and we first have to install email.js okay so here so npm install email js.com 
+
+ Save okay we are going to install that as a dependency all right and the installation is done so let's go back and here i'm just going to copy this and then paste that here and make sure i'm importing email js from email js.com okay i'm going to go back and i'm going to copy 
+
+ Going to copy this and then paste what i just copied save all right so we were importing react twice that is why the error was there i'm actually going to remove this action and the ref is going to be equal to the form okay that is equal to this use with okay and on submit we are going to call this function that we just created or we just pasted 
+
+ So on submit of this form we want to we want to call that function okay all right so now we have to link our template and the service that we just created okay and our user id as well um so let's go back to the email js and here that is the service id or the service key that we are going to link so i'm just going to copy that 
+
+ And replace that with this paste now let's copy the template that we created as well there's the id that we are going to um use okay so i'm going to copy that and replace that with this and our user id as well okay so let's copy our user id and that is here 
+
+ In the integration and then the api oh it is even here and then paste that in here okay all right so now let's test this out okay so let's go to let me refresh this and then let's send a message okay this from jendo jedo gmail.com send 
+
+ And now let's check our email so i'm going to check my email and i have it okay so i have a message from jindo right here all right so that is done actually you know what i want this to reset okay let me click on this button okay so here i'm going to do e dot target dot reset 
+
+ Okay save let's try that again send this message and the fields are cleared okay let's refresh our email and we have a new message the same message from jendo all right so that is all for the contact components okay or the contact section that is all for the contact component and now 
+
+ We have one more component to go and that is the footer okay so let's go into our code let me close this up and let's go into our footer now folder components now let me actually change this to the foot attack okay that's an atm of 5 semantic that okay so first we are going to have a link and this is going to be 
+
+ My logo okay and that's just going to take us to the top of the page let me actually give this a class of footer logo and below that we are going to have some permalinks okay so uh let's let's actually give this a class of permalinks so the lis are going to have anchor tags the first one is going to go to the top of the page 
+
+ And let's duplicate this a few times okay the second one is going to go to the about so we are basically going to have all the components or all the sections is going to go to the about we are going to have experience services portfolio that's the money house 
+
+ Okay let's have the contacts as well okay so contacts now below this we are going to have some socials as well here in the folder so let's put it inside a div and we are going to have the first one to go to facebook okay so we are going to have an icon inside of it but for now let's just duplicate it and the second one is going to go to instagram 
+
+ The third is going to go to twitter now let's get our icons so we are going to have facebook okay i'm going to use that one i'm going to import that from the react icons library we are going to have instagram i'm going to use this okay and down here actually let me have it okay so let me 
+
+ Paste that as a self closing tag let me do that for the facebook as well and lastly we are going to have twitter okay so let's search twitter always use this all right save let's check what we have and we have this okay so we have all three icons as well now 
+
+ I want to have that's below the photo socials i want to have a copyright okay so once you give that a class of footer copy right and it is going to be inside a small tag so let's have the copyright sign and then save okay so that's all for 
+
+ The futa jsx so let's go into the css and then give this some styling now i'm going to minimize this and put this um let's see i just keep it like that but i'm going to minimize the vs code right so let me get a footer type i'm going to give that a background of color primary 
+
+ Let's give it a pattern of 3 ram for the top and bottom and then zero for the left and right i'm going to text align everything to the center and give it a phone size of 0.9 ram now i'm going to give it a margin top of 7 ram and we have this anchor tags okay the links as you can see we have nothing here okay nothing is showing 
+
+ That is because they have the same color okay it's a light blue text on a light blue background so let's change the color for the links to color bg so we have that now let's get the logo okay so footer logo i'm going to make the font size bigger so two ram should be good font weight is going to be 500 i'm going to give it a margin bottom of 
+
+ Two ram and i'm going to display its block let me actually make that inline block now i'm going to get the permalinks okay that is the ul and display that great flex i'm going to set the flex wrap to wrap that's the file content to center let's give it a gap of two rams and imagine of zero auto you know what let me give it a bottom 
+
+ Margin a bottom margin of 3 ram now let's get the futa socials okay we have the icons here but it's below or under this floating knob okay so let's get the header footer socials and display that flex i'm going to justify content to the center give a gap between them a gap of one ram an imagine bottom of forum okay 
+
+ Now i'm going to get the links okay so each of these are actually inside a link or an anchor tag so for the social setting the link let's give that a background of the color bg and the text color or the icons color in this case is going to be white let's give them a pattern of 0.8 ram and border radius of 0.7 ram the display here is going to be flex 
+
+ And border of 1 pixel solid transparent okay so now i'm going to have a hover effect so photo socials a and then the hover on hover the background is going to be transparent and then the color that the text color is going to be color bg 
+
+ And we are going to have a color change for the border color so border color is going to be color bg as well now let's get the footer copyright okay let's get a copyright so footer copy right and i'm going to give that a margin bottom of forum and the color text color 
+
+ Of color bg okay so that is our copyright now you're going to have a very simple let's actually see how this looks on tablet so this actually looks good on tablets but it is not going to look great on 
+
+ Mobile phones for now so let's have a media query for mobile phones so i'm just going to copy this come in here and then paste it let me minimize that okay so it is going to be the media queries on mobile phones now i'm going to get the permalinks let me make this smaller i'm going to get the perma 
+
+ Links and the flex direction on mobile is going to be column okay and the gap between them is going to be 1.5 frame all right so we have that now let's get the footer socials as well and the margin bottom is going to be 2.6 ram okay okay so now this actually looks good on 
+
+ Tablets on mobile sorry all right so we are done with this whole website okay we are done with the whole project okay now one thing i want to change okay one small thing i want to change is the color okay the color for this um now the floating now so for that 
+
+ Let's see let's go into the floating now so that is the nav where is it okay let's go to the css and i want to change the active bga okay so the active one is going to have a background of the primary all right and then the color should be 
+
+ Bg the color bg okay should be black so that we have some contrast all right now we are done with everything so let's proceed to deploying this on the internet okay so let's deploy this on the internet so let's go back to the code and then right first let's go into our package.json okay 
+
+ And make sure to add home page and the home page is going to be our domain so http and then the domain we claimed okay so let's make sure this is added to our packet.json file and then save before we run npm run build okay so after saving that we can now go ahead and 
+
+ Do npm run build all right now our website or app is now ready to be deployed to the server okay now this is the build folder okay and this is what we are going to upload to the server but before that we have to compress this so i'm going to compress this to a zip file and this zip file is what we are going to upload okay so let's go to our hostinger h panel 
+
+ And then log in i'm going to manage i'm going to click manage and i'm going to click on file manager okay now let's select the domain and in here you should have a public and that's called html folder okay if you don't have it you can just create it okay and inside this public html is where we are going to upload the zip file okay so let's upload that file 
+
+ I'm just going to drag and drop that and upload okay now i'm going to extract this file i'm going to extract that the extraction is done now i can delete the zip file okay i don't need it anymore let's go into the build folder and move these files to the public html okay so i'm going to move these files to the public html okay so i'm going to select that and then move them in 
+
+ Let's go into the public html and delete the folder okay this build folder has nothing in it anymore so we are going to delete that so our file structure here or our folder structure here should be exactly like in the build that we have in our project on our system okay it should be the exact same thing okay so now our website is deployed okay 
+
+ Our files are uploaded now let's check out the website let's visit the domain and we should have our website so everything is working perfectly all right the testimonial section is working great and you would have to log in anyone visiting should log in before they can actually message you obviously and the email you can just go ahead and type in our body 
+
+ All right let's try the actual message as well that's the form let's send now i'm going to check my email here in the other browser okay so i have it all right and i'm using firefox here okay i'm using firefox just for you to know that 
+
+ This looks good on different browsers now let's try the floating now and everything looks great okay all right so that is all for this project thanks very much for watching to the end and i'll see you at the next one 
