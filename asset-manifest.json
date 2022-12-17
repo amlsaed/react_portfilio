@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/amlsaed/react_portfilio/static/css/main.bc20dacb.css",
-    "main.js": "/amlsaed/react_portfilio/static/js/main.156193c0.js",
-    "static/media/me.jpg": "/amlsaed/react_portfilio/static/media/me.69caa7749f3c069397a2.jpg",
-    "static/media/create-react-error.pdf": "/amlsaed/react_portfilio/static/media/create-react-error.d6d296926c47bc9211db.pdf",
-    "static/media/3.webp": "/amlsaed/react_portfilio/static/media/3.bafee805693a2ccf4271.webp",
-    "static/media/4.webp": "/amlsaed/react_portfilio/static/media/4.505e1ce9218317ad2542.webp",
-    "static/media/1.webp": "/amlsaed/react_portfilio/static/media/1.8302dfbe3e65e641f2d1.webp",
-    "static/media/me.png": "/amlsaed/react_portfilio/static/media/me.04d526de0855215d1d28.png",
-    "static/media/2.webp": "/amlsaed/react_portfilio/static/media/2.0a35f9985c2f69c91623.webp",
-    "static/media/pattern.png": "/amlsaed/react_portfilio/static/media/pattern.5e4b1f5139cf9f708648.png",
-    "index.html": "/amlsaed/react_portfilio/index.html",
-    "main.bc20dacb.css.map": "/amlsaed/react_portfilio/static/css/main.bc20dacb.css.map",
-    "main.156193c0.js.map": "/amlsaed/react_portfilio/static/js/main.156193c0.js.map"
+    "main.css": "/react_portfilio/static/css/main.b37f640f.css",
+    "main.js": "/react_portfilio/static/js/main.78f173a1.js",
+    "static/media/me.jpg": "/react_portfilio/static/media/me.69caa7749f3c069397a2.jpg",
+    "static/media/create-react-error.pdf": "/react_portfilio/static/media/create-react-error.d6d296926c47bc9211db.pdf",
+    "static/media/3.webp": "/react_portfilio/static/media/3.bafee805693a2ccf4271.webp",
+    "static/media/4.webp": "/react_portfilio/static/media/4.505e1ce9218317ad2542.webp",
+    "static/media/1.webp": "/react_portfilio/static/media/1.8302dfbe3e65e641f2d1.webp",
+    "static/media/me.png": "/react_portfilio/static/media/me.04d526de0855215d1d28.png",
+    "static/media/2.webp": "/react_portfilio/static/media/2.0a35f9985c2f69c91623.webp",
+    "static/media/pattern.png": "/react_portfilio/static/media/pattern.5e4b1f5139cf9f708648.png",
+    "index.html": "/react_portfilio/index.html",
+    "main.b37f640f.css.map": "/react_portfilio/static/css/main.b37f640f.css.map",
+    "main.78f173a1.js.map": "/react_portfilio/static/js/main.78f173a1.js.map"
   },
   "entrypoints": [
-    "static/css/main.bc20dacb.css",
-    "static/js/main.156193c0.js"
+    "static/css/main.b37f640f.css",
+    "static/js/main.78f173a1.js"
   ]
 }
